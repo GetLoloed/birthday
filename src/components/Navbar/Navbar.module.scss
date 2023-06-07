@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 45px 23px 45px;
+
+  .text {
+    font-family: Bison, sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+  }
+}
