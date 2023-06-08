@@ -45,3 +45,14 @@ G
 src/styles/globals.scss,0\3\03c76becad79671cb9607754b1bfa58662fed1f3
 G
 src/pages/_document.tsx,0\5\052f85edfc3fbb9d129530f0f8b191ff6c16f7ce
+>
+.eslintrc.json,7\1\71c20a341bfe32aa5cd5b4384e94f942bab6a7d3
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+O
+src/styles/abstract/_fonts.scss,9\6\96b0981094067ae2c4802097d4499cbf501d99f7
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+Q
+!src/contexts/BirthdayProvider.tsx,c\1\c1d942ce9ff101c23236b3dfe99d7aa961f49a0b
