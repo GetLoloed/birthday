@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 673.15px;
+  height: 36.488rem;
+  border: 0.2rem solid #000000;
+  border-radius: 1.4rem;
+  position: relative;
+  background-color: var(--white);
+}
+
+.background {
+  position: absolute;
+  width: 673.15px;
+  height: 36.488rem;
+  top: 1.012rem;
+  right: 0.985rem;
+  border: 0.2rem solid var(--black);
+  border-radius: 1.4rem;
+  z-index: -1;
+}

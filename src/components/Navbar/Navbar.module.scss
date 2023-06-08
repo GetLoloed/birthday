@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.2rem 4.5rem 2.3rem 4.5rem;
+  background-color: var(--white);
+
+  .text {
+    font-family: Bison, sans-serif;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.045rem;
+    text-transform: uppercase;
+  }
+}

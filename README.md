@@ -1,38 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![GitHub package.json version](https://img.shields.io/github/package-json/v/GetLoloed/birthday)
+![GitHub repo size](https://img.shields.io/github/repo-size/GetLoloed/birthday)
+![GitHub last commit](https://img.shields.io/github/last-commit/GetLoloed/birthday)
+![GitHub top language](https://img.shields.io/github/languages/top/GetLoloed/birthday)
+![GitHub language count](https://img.shields.io/github/languages/count/GetLoloed/birthday)
+![GitHub](https://img.shields.io/github/license/GetLoloed/birthday)
 
-## Getting Started
+# ✨ Happy Birthday ✨
 
-First, run the development server:
+![Happy Birthday](/images/capy-bday.png)
+
+## Table of Contents
+
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Technologies used](#Technologies)
+- [How to use](#How-to-use)
+
+## Description
+
+This is a simple project designed to wish a happy birthday to students from My Digital School.
+Here is this [link](https://birthday-javxv8fyc-getloloed.vercel.app/) to see the project online.
+
+## Installation
+
+To install this project, you can clone it using the following command line :
+
+```bash
+git clone https://github.com/GetLoloed/birthday.git
+cd birthday
+npm install 
+or
+yarn install
+or
+pnpm install
+```
+
+## Usage
+
+To run the project in development mode:
+
+```bash
+npm run dev 
+```
+
+To run the project in production mode:
+
+```bash
+npm run build
+npm run start
+```
+
+## Technologies
+
+This project use Next.js, React.js, TypeScript, Sass, Verce and Supabase.
+
+- [Next.js](https://nextjs.org/)
+- [React.js](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Sass](https://sass-lang.com/)
+- [Vercel](https://vercel.com/)
+- [Supabase](https://supabase.io/)
+
+## How to use
+
+1. Open the terminal and navigate to the project folder
+2. Rune the following command to install the dependencies:
+
+```bash
+npm install
+```
+
+3. Once the installation is complete, launch the application in development mode with this command:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open your browser and go to http://localhost:3000/
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+5. On the home page, you will see a list of students from My Digital School who are celebrating their birthday. You can
+   click on the "Wish a Happy Birthday" button to send them a personalized message.
+6. At 8 AM, an automatic email will be sent to each student who has a birthday.
+7. To add students to the database, you need to upload a CSV file to the **/api/csv** route. The CSV file should have
+   the
+   **following columns**: **firstname**, **lastname**, **birthday (date)**, **and email**.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Note: Make sure the CSV file follows the specified format for successful data import.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Enjoy using the application to wish a happy birthday to your fellow students from My Digital School!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

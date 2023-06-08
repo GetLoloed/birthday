@@ -1,0 +1,128 @@
+.main {
+  display: flex;
+
+  .left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border-right: var(--black) 0.2rem solid;
+    border-top: var(--black) 0.2rem solid;
+
+    .circle {
+      position: relative;
+      width: 40.2rem;
+      height: 40.3rem;
+      animation: rotate 20s linear infinite;
+      z-index: 10;
+    }
+
+    .circlebg {
+      position: absolute;
+      width: 40.2rem;
+      height: 40.3rem;
+      top: 9rem;
+      left: 16rem;
+      background-color: var(--black);
+      border-radius: 50%;
+      z-index: 8;
+    }
+
+    .circlebgRandom {
+      position: absolute;
+      width: 35.2rem;
+      height: 35.3rem;
+      top: 8rem;
+      left: 19rem;
+      border-radius: 50%;
+      z-index: 9;
+    }
+
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+
+    .star1 {
+      position: absolute;
+      top: 7.4rem;
+      left: 6.6rem;
+    }
+
+    .star2 {
+      position: absolute;
+      top: 20.2rem;
+      right: 9.2rem;
+    }
+
+    .star3 {
+      position: absolute;
+      top: 44.5rem;
+      left: 8.5rem;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 76.7rem;
+    border-top: var(--black) 0.2rem solid;
+    gap: 3.3rem;
+
+    .progressContainer {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+
+      .number {
+        font-family: Designer, sans-serif;
+        font-size: 1.8rem;
+        line-height: 1.7rem;
+        font-style: italic;
+      }
+
+      .progressBar {
+        width: 35.2rem;
+        height: 1.3rem;
+        background-color: var(--white);
+        border: 0.1rem solid #000000;
+        border-radius: 0.65rem;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0.6rem;
+          right: 0.3rem;
+          width: 100%;
+          height: 100%;
+          background-color: #000000;
+          border-radius: 0.65rem;
+
+          z-index: -1;
+        }
+      }
+
+
+      .progress {
+        height: 100%;
+        background-color: var(--pink);
+        border-radius: 0.8rem;
+        transition: width 0.5s ease;
+      }
+    }
+  }
+}
+
