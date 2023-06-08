@@ -1,5 +1,5 @@
-import { PrismaClient } from '@prisma/client';
-import { NextApiRequest, NextApiResponse } from "next";
+import {PrismaClient} from '@prisma/client';
+import {NextApiRequest, NextApiResponse} from "next";
 import nodemailer from 'nodemailer';
 import cron from 'node-cron';
 import moment from 'moment-timezone';
@@ -56,7 +56,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
         res.json(result);
     } else {
-        res.status(405).json({ message: 'Method not allowed' });
+        res.status(405).json({message: 'Method not allowed'});
     }
 }
 
@@ -64,6 +64,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 cron.schedule('0 8 * * *', () => {
     const franceTime = moment().tz('Europe/Paris');
     if (franceTime.hour() === 8 && franceTime.minute() === 0) {
-        sendBirthdayEmails();
+        sendBirthdayEmails().then(r => console.log(r));
     }
 });
