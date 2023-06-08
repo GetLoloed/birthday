@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border-right: var(--black) 0.2rem solid;
+    border-top: var(--black) 0.2rem solid;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 76.7rem;
+    border-top: var(--black) 0.2rem solid;
+  }
+}
