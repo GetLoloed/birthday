@@ -8,9 +8,9 @@ datasource db {
 }
 
 model student {
-  id        Int      @id
-  firstname String   @db.Char(250)
-  lastname  String   @db.Char(250)
+  id        Int      @id @default(autoincrement())
+  firstname String   @db.VarChar(250)
+  lastname  String   @db.VarChar(250)
   birthday  DateTime @db.Date
-  email     String   @db.Char(250)
+  email     String   @db.VarChar(250)
 }
