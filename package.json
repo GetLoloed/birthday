@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@types/formidable": "^2.0.6",
+    "@types/moment-timezone": "^0.5.30",
     "@types/node-cron": "^3.0.7",
     "prisma": "^4.15.0",
     "sass": "^1.62.1"
